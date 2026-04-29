@@ -1,65 +1,62 @@
-import { todo } from "@/lib/copy";
-
 /**
- * Every string rendered on the homepage lives here. Strings flagged as
- * `todo(...)` show with an amber dashed outline in dev mode (see globals.css)
- * and produce one entry in the final TODO inventory.
+ * Homepage copy. Sourced from Assets/Suman_Enterprise_Brochure.pdf and the
+ * client's direct instructions. Where the brochure provides a phrase, it is
+ * used near-verbatim; minor sentence structure has been cleaned for web
+ * legibility but no facts have been added.
  */
 export const home = {
   meta: {
-    title: todo("homepage <title> — under 60 chars, primary keyword + Pune"),
-    description: todo("homepage meta description — under 160 chars, value prop + audience"),
+    title: "Suman Enterprises — Licensed Electrical Contractor, Pune",
+    description:
+      "15 years in power transmission, building and railway electrification, 22 KV transformer stations, HT/LT cable laying and AMCs. Pune, Maharashtra.",
   },
 
   hero: {
-    eyebrow: "Government-licensed since 2009",
-    heading: todo("hero H1 — 6–9 words, anchored on trust + electrical contracting"),
-    subheading: todo(
-      "hero sub-line — 18–25 words, who you serve (government, real estate, industry) and where (Pune & Maharashtra)"
-    ),
+    eyebrow: "15 years of experience",
+    heading: "Power transmission, distribution, building and railway electrification.",
+    subheading:
+      "Suman Enterprises has 15 years of experience in Electrical Engineering Services — Power Transmission, Distribution, Building Electrification and Railway Electrification — and has continued to maintain structured growth.",
     primaryCta: { label: "Get a Quote", href: "/contact" },
     secondaryCta: { label: "View Our Projects", href: "/projects" },
-    imageAlt: "Engineers at a 22/630 KVA transformer station beside a high-voltage transmission pylon and a building electrification site",
+    imageAlt:
+      "Engineers at a 22/630 KVA transformer station beside a high-voltage transmission pylon and a building electrification site",
   },
 
   intro: {
-    eyebrow: "What we do",
-    heading: todo("intro H2 — 5–8 words summarising the service breadth"),
-    body: todo(
-      "intro body — 40–60 words; HT/LT distribution, building electrification, railway, transformer, AMC. Indian English."
-    ),
+    eyebrow: "Who we are",
+    heading: "Government Electrical Licensed Civil Engineers, Contractors & Suppliers.",
+    body:
+      "We are working in the Electrical Field. We have completed Residential Township Projects, Industrial Projects, Commercial Projects, Switching Stations, Transformer Installation, O.H. Line Work, Street Light Pole, H.T. & L.T. Feeder Pillar Erection, and H.T. & L.T. Cable Joint and Laying Work. We also offer AMCs for Residential Township, Industrial / Commercial sites and APFC Panels. We deliver quality designs and consultancy services to our clients, supporting them with our expert knowledge and skills.",
   },
 
   services: {
     eyebrow: "Capabilities",
     heading: "Ten service pillars",
-    body: todo(
-      "services overview lead-in — 25–35 words on how the practice spans transmission, distribution, building, railway and aftermarket AMC"
-    ),
+    body:
+      "From HT/LT distribution and transformer stations to building, railway and renewable installations — and the AMCs that keep them running afterwards.",
     cta: { label: "See all services", href: "/services" },
   },
 
   process: {
     eyebrow: "How we work",
     heading: "Survey to AMC, end to end",
-    body: todo(
-      "process explainer — 30–45 words on the four-stage delivery model: site survey, design & utility liaison, execution, charging & AMC handover"
-    ),
+    body:
+      "Site survey, single-line schematic and load study; drawings, MSEDCL/MSETCL liaison and BOQ; cabling, transformer, panel, testing and commissioning; charging, handover and ongoing maintenance.",
   },
 
   projects: {
     eyebrow: "Selected work",
-    heading: todo("projects H2 — 4–6 words, e.g. 'Where we have delivered'"),
-    body: todo("projects lead-in — 25–35 words on the kinds of projects on the books"),
+    heading: "Some of our projects",
+    body:
+      "From a 22/63 KVA DP structure for a spiritual trust at Pisoli, through 22/630 KVA indoor transformer stations across XRBIA's Hinjwadi township, to floriculture and food-processing sites across Pune district.",
     cta: { label: "Browse case studies", href: "/projects" },
   },
 
   tenderCta: {
     eyebrow: "For procurement officers",
-    heading: todo("tender CTA H2 — 6–9 words; speaks directly to MSEDCL / PWD / MIDC officers"),
-    body: todo(
-      "tender CTA body — 25–35 words; mentions empanelment, response time on tender enquiries, contact channel"
-    ),
+    heading: "MSETCL & MSEDCL liaison, drawing approvals, full electrical inspectorate work.",
+    body:
+      "Electrical Load Sanction with M.S.E.T.C.L. and M.S.E.D.C.L., layout and designing, electrical inspectorate liaison, planning and consultation, energy compliance and audit. Send us your tender or drawing — we respond within one working day.",
     primaryCta: { label: "Submit a Tender Enquiry", href: "/government-tenders" },
     secondaryCta: { label: "Download credentials", href: "/quality-certifications" },
   },

@@ -17,7 +17,7 @@ export function Header() {
               {site.name.toUpperCase()}
             </span>
             <span className="hidden lg:inline text-xs text-steel uppercase tracking-widest">
-              Est. {new Date().getFullYear() - site.yearsInBusiness}
+              {site.yearsInBusiness} years of experience
             </span>
           </Link>
 

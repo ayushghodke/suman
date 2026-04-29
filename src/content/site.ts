@@ -1,12 +1,12 @@
 import { todo } from "@/lib/copy";
 
 /**
- * Single source of truth for company-wide facts.
- * Update fields here and they propagate to header, footer, schema.org, and contact pages.
+ * Single source of truth for company-wide facts. Sourced from the company
+ * brochure (Assets/Suman_Enterprise_Brochure.pdf) and confirmed by the client.
  */
 export const site = {
   name: "Suman Enterprises",
-  tagline: "Government-licensed electrical & civil engineering contractor",
+  tagline: "Government Electrical Licensed & Civil Engineers, Contractors & Suppliers",
   yearsInBusiness: 15,
   origin: process.env.NEXT_PUBLIC_SITE_URL || "https://www.sumanenterprises.example",
 
@@ -19,20 +19,23 @@ export const site = {
     url: "https://wa.me/918237295778?text=Hi%20Suman%20Enterprises",
   },
   email: {
-    primary: todo("primary contact email — e.g. info@sumanenterprises.in"),
-    careers: todo("careers email"),
+    primary: "sumanenterprisespune@yahoo.com",
+    secondary: "saching2877@gmail.com",
+    careers: "sumanenterprisespune@yahoo.com",
   },
 
   address: {
-    street: todo("full street address line"),
-    locality: "Dhankawadi",
+    street: "S. No. 2/6, House No. 513, 2nd Floor, Kareshwar Society",
+    locality: "Adarsh Nagar, Dhankawadi",
     city: "Pune",
     region: "Maharashtra",
-    postalCode: todo("PIN code"),
+    postalCode: "411043",
     country: "IN",
   },
 
-  // Statutory identifiers — leave as TODO until the client supplies them
+  // Statutory identifiers — leave as TODO until the client supplies them.
+  // These are *not* rendered on any homepage surface; the schema.ts `clean()`
+  // helper strips them from JSON-LD so Google never sees placeholder text.
   identifiers: {
     electricalLicenceNumber: todo("Govt electrical contractor licence number"),
     isoCertificate: todo("ISO 9001:2015 certificate number"),
