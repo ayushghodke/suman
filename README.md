@@ -32,7 +32,7 @@ npm run build
 npm start
 ```
 
-`npm run build` also runs `next-sitemap` afterwards (postbuild) to emit `public/sitemap*.xml` and `public/robots.txt`.
+The sitemap and robots are served natively by Next.js (`src/app/sitemap.ts` and `src/app/robots.ts`) — no postbuild step required. They are reachable at `/sitemap.xml` and `/robots.txt`.
 
 ---
 
@@ -130,8 +130,8 @@ For a no-JS fallback, every form will also ship a `mailto:` button that pre-fill
 
 - **Metadata** is set in `src/app/layout.tsx` (defaults) and overridden per route via `export const metadata = buildMetadata({...})` (`src/lib/seo.ts`).
 - **JSON-LD**: `Organization` + `LocalBusiness` (Electrician sub-type) are emitted globally from the root layout. Service detail pages, case studies, and FAQ pages add their own schemas via `<JsonLd>` (`src/components/seo/JsonLd.tsx`). The schema builder in `src/lib/schema.ts` strips any field whose value is still a `[TODO: ...]` placeholder, so structured data never publishes placeholder text.
-- **Sitemap** is dynamically generated at `/sitemap.xml` (Next.js App Router `sitemap.ts`). The `next-sitemap` postbuild step also writes a static `public/sitemap*.xml` and `public/robots.txt` for hosts that prefer those.
-- **Robots** at `/robots.ts` allows everything except `/api/`.
+- **Sitemap** is dynamically generated at `/sitemap.xml` from `src/app/sitemap.ts` — it enumerates static routes plus all 10 services and 7 case studies.
+- **Robots** at `/robots.txt` (from `src/app/robots.ts`) allows everything except `/api/`.
 
 ---
 

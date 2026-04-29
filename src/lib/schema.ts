@@ -52,7 +52,7 @@ export function localBusinessSchema(): JsonLd {
     url: site.origin,
     telephone: site.phones.primary.tel,
     email: site.email.primary,
-    priceRange: "₹₹",
+    priceRange: "$$",
     address: clean({
       "@type": "PostalAddress",
       streetAddress: site.address.street,
