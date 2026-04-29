@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Transformer Installation and Substation">
+  <title>Transformer Installation</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- HT bushings (3 phase, top) -->
+  <g>
+    <rect x="32" y="18" width="6" height="22" fill="#E89B1C" stroke="#0B2A4A" stroke-width="1.5" rx="1"/>
+    <rect x="57" y="18" width="6" height="22" fill="#E89B1C" stroke="#0B2A4A" stroke-width="1.5" rx="1"/>
+    <rect x="82" y="18" width="6" height="22" fill="#E89B1C" stroke="#0B2A4A" stroke-width="1.5" rx="1"/>
+    <ellipse cx="35" cy="18" rx="5" ry="2" fill="#F7F9FC" stroke="#0B2A4A" stroke-width="1"/>
+    <ellipse cx="60" cy="18" rx="5" ry="2" fill="#F7F9FC" stroke="#0B2A4A" stroke-width="1"/>
+    <ellipse cx="85" cy="18" rx="5" ry="2" fill="#F7F9FC" stroke="#0B2A4A" stroke-width="1"/>
+  </g>
+  <!-- Conservator -->
+  <rect x="28" y="40" width="64" height="8" fill="#5A6A7A" stroke="#0B2A4A" stroke-width="1.5" rx="4"/>
+  <!-- Main tank -->
+  <rect x="22" y="48" width="76" height="44" fill="#5A6A7A" stroke="#0B2A4A" stroke-width="2.2" rx="2"/>
+  <!-- Cooling fins -->
+  <g stroke="#0B2A4A" stroke-width="1.2" fill="none">
+    <line x1="22" y1="56" x2="16" y2="56"/>
+    <line x1="22" y1="64" x2="16" y2="64"/>
+    <line x1="22" y1="72" x2="16" y2="72"/>
+    <line x1="22" y1="80" x2="16" y2="80"/>
+    <line x1="98" y1="56" x2="104" y2="56"/>
+    <line x1="98" y1="64" x2="104" y2="64"/>
+    <line x1="98" y1="72" x2="104" y2="72"/>
+    <line x1="98" y1="80" x2="104" y2="80"/>
+  </g>
+  <!-- Nameplate -->
+  <rect x="46" y="62" width="28" height="20" fill="#0B2A4A" stroke="#E89B1C" stroke-width="1"/>
+  <text x="60" y="73" font-family="Inter, Arial, sans-serif" font-size="7" fill="#E89B1C" text-anchor="middle" font-weight="700">22/630</text>
+  <text x="60" y="80" font-family="Inter, Arial, sans-serif" font-size="5" fill="#F7F9FC" text-anchor="middle">KVA</text>
+  <!-- Wheels / base -->
+  <rect x="22" y="92" width="76" height="4" fill="#0B2A4A"/>
+  <circle cx="32" cy="100" r="4" fill="#0B2A4A" stroke="#5A6A7A" stroke-width="1"/>
+  <circle cx="88" cy="100" r="4" fill="#0B2A4A" stroke="#5A6A7A" stroke-width="1"/>
+  <!-- Ground -->
+  <line x1="14" y1="106" x2="106" y2="106" stroke="#0B2A4A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

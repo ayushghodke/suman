@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Power Transmission and Distribution">
+  <title>Power Transmission &amp; Distribution</title>
+  <!-- Background plate -->
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- Pylon -->
+  <g stroke="#0B2A4A" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- legs -->
+    <line x1="42" y1="100" x2="54" y2="28"/>
+    <line x1="78" y1="100" x2="66" y2="28"/>
+    <!-- crossarms -->
+    <line x1="32" y1="40" x2="88" y2="40"/>
+    <line x1="26" y1="58" x2="94" y2="58"/>
+    <line x1="22" y1="78" x2="98" y2="78"/>
+    <!-- lattice -->
+    <line x1="42" y1="100" x2="78" y2="92"/>
+    <line x1="78" y1="100" x2="42" y2="92"/>
+    <line x1="46" y1="80" x2="74" y2="74"/>
+    <line x1="74" y1="80" x2="46" y2="74"/>
+    <line x1="50" y1="60" x2="70" y2="54"/>
+    <line x1="70" y1="60" x2="50" y2="54"/>
+    <line x1="53" y1="40" x2="67" y2="34"/>
+    <line x1="67" y1="40" x2="53" y2="34"/>
+  </g>
+  <!-- Insulator dots -->
+  <g fill="#E89B1C">
+    <circle cx="32" cy="46" r="2"/>
+    <circle cx="88" cy="46" r="2"/>
+    <circle cx="26" cy="64" r="2"/>
+    <circle cx="94" cy="64" r="2"/>
+    <circle cx="22" cy="84" r="2"/>
+    <circle cx="98" cy="84" r="2"/>
+  </g>
+  <!-- Power lines (curving) -->
+  <g stroke="#1F4E8C" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 8,46 Q 60,52 112,46"/>
+    <path d="M 8,64 Q 60,72 112,64"/>
+    <path d="M 8,84 Q 60,92 112,84"/>
+  </g>
+</svg>

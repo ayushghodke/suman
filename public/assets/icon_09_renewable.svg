@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Renewable Energy Solutions">
+  <title>Renewable Energy Solutions</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- Sun -->
+  <g>
+    <circle cx="86" cy="28" r="9" fill="#E89B1C"/>
+    <g stroke="#E89B1C" stroke-width="2" stroke-linecap="round">
+      <line x1="86" y1="12" x2="86" y2="16"/>
+      <line x1="86" y1="40" x2="86" y2="44"/>
+      <line x1="70" y1="28" x2="74" y2="28"/>
+      <line x1="98" y1="28" x2="102" y2="28"/>
+      <line x1="74" y1="16" x2="77" y2="19"/>
+      <line x1="95" y1="37" x2="98" y2="40"/>
+      <line x1="98" y1="16" x2="95" y2="19"/>
+      <line x1="77" y1="37" x2="74" y2="40"/>
+    </g>
+  </g>
+  <!-- Solar panel (tilted) -->
+  <g>
+    <polygon points="20,90 76,90 88,46 32,46" fill="#1F4E8C" stroke="#0B2A4A" stroke-width="2.4" stroke-linejoin="round"/>
+    <!-- Cell grid -->
+    <g stroke="#0B2A4A" stroke-width="1" opacity="0.85">
+      <!-- Horizontal cell lines -->
+      <line x1="29" y1="58" x2="85" y2="58"/>
+      <line x1="26" y1="70" x2="82" y2="70"/>
+      <line x1="23" y1="82" x2="79" y2="82"/>
+      <!-- Vertical (slanted) cell lines -->
+      <line x1="46" y1="46" x2="34" y2="90"/>
+      <line x1="60" y1="46" x2="48" y2="90"/>
+      <line x1="74" y1="46" x2="62" y2="90"/>
+    </g>
+  </g>
+  <!-- Stand legs -->
+  <line x1="34" y1="90" x2="32" y2="100" stroke="#0B2A4A" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="68" y1="90" x2="70" y2="100" stroke="#0B2A4A" stroke-width="2.2" stroke-linecap="round"/>
+  <!-- Ground -->
+  <line x1="14" y1="106" x2="106" y2="106" stroke="#0B2A4A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

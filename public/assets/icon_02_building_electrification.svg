@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Building Electrification">
+  <title>Building Electrification</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- Tall building (left) -->
+  <g>
+    <rect x="22" y="26" width="34" height="74" fill="none" stroke="#0B2A4A" stroke-width="2.4" stroke-linejoin="round"/>
+    <!-- Windows -->
+    <g fill="#E89B1C">
+      <rect x="28" y="34" width="6" height="8" rx="1"/>
+      <rect x="40" y="34" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="48" y="34" width="6" height="8" rx="1"/>
+      <rect x="28" y="48" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="40" y="48" width="6" height="8" rx="1"/>
+      <rect x="48" y="48" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="28" y="62" width="6" height="8" rx="1"/>
+      <rect x="40" y="62" width="6" height="8" rx="1"/>
+      <rect x="48" y="62" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="28" y="76" width="6" height="8" rx="1"/>
+      <rect x="40" y="76" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="48" y="76" width="6" height="8" rx="1"/>
+    </g>
+    <rect x="34" y="92" width="10" height="8" fill="#0B2A4A"/>
+  </g>
+  <!-- Shorter building (right) -->
+  <g>
+    <rect x="62" y="44" width="36" height="56" fill="none" stroke="#0B2A4A" stroke-width="2.4" stroke-linejoin="round"/>
+    <g fill="#E89B1C">
+      <rect x="68" y="52" width="6" height="8" rx="1"/>
+      <rect x="80" y="52" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="90" y="52" width="6" height="8" rx="1"/>
+      <rect x="68" y="66" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="80" y="66" width="6" height="8" rx="1"/>
+      <rect x="90" y="66" width="6" height="8" rx="1" opacity="0.45"/>
+      <rect x="68" y="80" width="6" height="8" rx="1"/>
+      <rect x="80" y="80" width="6" height="8" rx="1"/>
+      <rect x="90" y="80" width="6" height="8" rx="1"/>
+    </g>
+  </g>
+  <!-- Lightning bolt symbol on tall building (electrification) -->
+  <path d="M 38,18 L 32,28 L 38,28 L 34,38 L 44,26 L 38,26 L 42,18 Z" fill="#E89B1C" stroke="#0B2A4A" stroke-width="1" stroke-linejoin="round"/>
+  <!-- Ground line -->
+  <line x1="14" y1="100" x2="106" y2="100" stroke="#0B2A4A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

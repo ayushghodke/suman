@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Standby Generation and UPS Systems">
+  <title>Standby Generation &amp; UPS</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- DG enclosure -->
+  <rect x="18" y="38" width="84" height="56" rx="3" fill="#5A6A7A" stroke="#0B2A4A" stroke-width="2.4"/>
+  <!-- Top exhaust -->
+  <rect x="68" y="22" width="10" height="16" fill="#0B2A4A"/>
+  <rect x="64" y="18" width="18" height="6" rx="2" fill="#0B2A4A"/>
+  <!-- Louvres on enclosure (cooling) -->
+  <g stroke="#0B2A4A" stroke-width="1.4" fill="none">
+    <line x1="26" y1="48" x2="48" y2="48"/>
+    <line x1="26" y1="54" x2="48" y2="54"/>
+    <line x1="26" y1="60" x2="48" y2="60"/>
+    <line x1="26" y1="66" x2="48" y2="66"/>
+    <line x1="26" y1="72" x2="48" y2="72"/>
+  </g>
+  <!-- Control panel -->
+  <rect x="56" y="46" width="38" height="32" fill="#0B2A4A" stroke="#E89B1C" stroke-width="1.2"/>
+  <!-- Display / digital meter -->
+  <rect x="60" y="50" width="30" height="10" fill="#1F4E8C"/>
+  <text x="75" y="58" font-family="Inter, Arial, sans-serif" font-size="6" fill="#E89B1C" text-anchor="middle" font-weight="700">415V</text>
+  <!-- Indicator lights -->
+  <circle cx="62" cy="68" r="2" fill="#2E7D4F"/>
+  <circle cx="70" cy="68" r="2" fill="#E89B1C"/>
+  <circle cx="78" cy="68" r="2" fill="#5A6A7A"/>
+  <!-- Buttons -->
+  <rect x="60" y="72" width="14" height="3" fill="#5A6A7A"/>
+  <rect x="76" y="72" width="14" height="3" fill="#5A6A7A"/>
+  <!-- Wheels / base -->
+  <rect x="18" y="94" width="84" height="3" fill="#0B2A4A"/>
+  <rect x="22" y="97" width="14" height="6" fill="#0B2A4A"/>
+  <rect x="84" y="97" width="14" height="6" fill="#0B2A4A"/>
+  <!-- Ground -->
+  <line x1="14" y1="106" x2="106" y2="106" stroke="#0B2A4A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

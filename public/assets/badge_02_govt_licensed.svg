@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Government Electrical Licensed Contractor">
+  <title>Government Electrical Licensed Contractor</title>
+  <!-- Shield base -->
+  <path d="M 80,12 L 142,30 L 142,82 Q 142,128 80,150 Q 18,128 18,82 L 18,30 Z"
+        fill="#0B2A4A" stroke="#E89B1C" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Inner border -->
+  <path d="M 80,22 L 134,38 L 134,82 Q 134,120 80,140 Q 26,120 26,82 L 26,38 Z"
+        fill="none" stroke="#E89B1C" stroke-width="1" opacity="0.6"/>
+  <!-- Lightning bolt -->
+  <path d="M 86,42 L 64,80 L 78,80 L 70,108 L 96,72 L 82,72 L 90,42 Z"
+        fill="#E89B1C" stroke="#F7F9FC" stroke-width="1" stroke-linejoin="round"/>
+  <!-- Bottom text band -->
+  <rect x="20" y="118" width="120" height="20" fill="#E89B1C"/>
+  <text x="80" y="131" font-family="Inter, Arial, sans-serif" font-size="9" fill="#0B2A4A" text-anchor="middle" font-weight="800" letter-spacing="1">GOVT LICENSED</text>
+  <!-- Top text -->
+  <text x="80" y="36" font-family="Inter, Arial, sans-serif" font-size="7" fill="#F7F9FC" text-anchor="middle" font-weight="600" letter-spacing="1.5">CEI MAHARASHTRA</text>
+</svg>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Street Lighting and Feeder Pillar">
+  <title>Street Lighting &amp; Feeder Pillar</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- Glow halo -->
+  <circle cx="62" cy="32" r="22" fill="#E89B1C" opacity="0.16"/>
+  <circle cx="62" cy="32" r="12" fill="#E89B1C" opacity="0.28"/>
+  <!-- Pole -->
+  <line x1="40" y1="20" x2="40" y2="100" stroke="#0B2A4A" stroke-width="3" stroke-linecap="round"/>
+  <!-- Arm -->
+  <path d="M 40,28 Q 50,28 56,32 L 70,40" stroke="#0B2A4A" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  <!-- Lamp head -->
+  <path d="M 64,38 L 78,38 L 76,46 L 66,46 Z" fill="#0B2A4A"/>
+  <!-- Lamp glow -->
+  <circle cx="71" cy="44" r="3" fill="#E89B1C"/>
+  <!-- Light cone -->
+  <path d="M 64,46 L 88,90 L 54,90 Z" fill="#E89B1C" opacity="0.18"/>
+  <!-- Base -->
+  <rect x="34" y="100" width="12" height="4" fill="#0B2A4A"/>
+  <!-- Feeder pillar (small cabinet on right, suggests electrical infrastructure) -->
+  <g>
+    <rect x="84" y="74" width="20" height="26" fill="none" stroke="#0B2A4A" stroke-width="2.2" rx="2"/>
+    <line x1="84" y1="82" x2="104" y2="82" stroke="#0B2A4A" stroke-width="1.2"/>
+    <circle cx="88" cy="78" r="1.2" fill="#E89B1C"/>
+    <circle cx="92" cy="78" r="1.2" fill="#E89B1C"/>
+    <rect x="88" y="86" width="12" height="3" fill="#1F4E8C"/>
+    <rect x="88" y="92" width="12" height="3" fill="#1F4E8C"/>
+  </g>
+  <!-- Ground -->
+  <line x1="14" y1="106" x2="106" y2="106" stroke="#0B2A4A" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

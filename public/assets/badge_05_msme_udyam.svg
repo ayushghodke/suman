@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="MSME Udyam Registered">
+  <title>MSME Udyam Registered</title>
+  <!-- Hexagonal frame -->
+  <polygon points="80,12 142,46 142,114 80,148 18,114 18,46"
+           fill="#1F4E8C" stroke="#E89B1C" stroke-width="2.5" stroke-linejoin="round"/>
+  <polygon points="80,22 132,52 132,108 80,138 28,108 28,52"
+           fill="none" stroke="#E89B1C" stroke-width="1" opacity="0.5"/>
+  <!-- Tricolour band (subtle nod to GoI) -->
+  <rect x="42" y="40" width="76" height="3" fill="#E89B1C"/>
+  <rect x="42" y="44" width="76" height="3" fill="#F7F9FC"/>
+  <rect x="42" y="48" width="76" height="3" fill="#2E7D4F"/>
+  <!-- MSME text -->
+  <text x="80" y="76" font-family="Inter, Arial, sans-serif" font-size="22" fill="#F7F9FC" text-anchor="middle" font-weight="800" letter-spacing="1">MSME</text>
+  <!-- Udyam -->
+  <text x="80" y="96" font-family="Inter, Arial, sans-serif" font-size="11" fill="#E89B1C" text-anchor="middle" font-weight="700" letter-spacing="2">UDYAM</text>
+  <text x="80" y="110" font-family="Inter, Arial, sans-serif" font-size="7" fill="#F7F9FC" text-anchor="middle" font-weight="600" letter-spacing="1.5">REGISTERED</text>
+  <!-- Bottom decorative dots -->
+  <g fill="#E89B1C">
+    <circle cx="68" cy="124" r="2"/>
+    <circle cx="80" cy="124" r="2"/>
+    <circle cx="92" cy="124" r="2"/>
+  </g>
+</svg>

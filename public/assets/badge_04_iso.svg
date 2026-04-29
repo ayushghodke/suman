@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="ISO 9001:2015 Certified">
+  <title>ISO 9001:2015 Quality Certified</title>
+  <circle cx="80" cy="80" r="74" fill="#0B2A4A"/>
+  <!-- Outer ring detail -->
+  <circle cx="80" cy="80" r="68" fill="none" stroke="#E89B1C" stroke-width="2"/>
+  <circle cx="80" cy="80" r="62" fill="none" stroke="#E89B1C" stroke-width="0.5" opacity="0.5"/>
+  <!-- Star burst around -->
+  <g fill="#E89B1C">
+    <polygon points="80,18 82,26 78,26"/>
+    <polygon points="80,142 82,134 78,134"/>
+    <polygon points="18,80 26,82 26,78"/>
+    <polygon points="142,80 134,82 134,78"/>
+  </g>
+  <!-- Inner band -->
+  <circle cx="80" cy="80" r="48" fill="#E89B1C"/>
+  <circle cx="80" cy="80" r="42" fill="#0B2A4A"/>
+  <!-- ISO text -->
+  <text x="80" y="68" font-family="Inter, Arial, sans-serif" font-size="20" fill="#E89B1C" text-anchor="middle" font-weight="800" letter-spacing="1">ISO</text>
+  <text x="80" y="86" font-family="Inter, Arial, sans-serif" font-size="14" fill="#F7F9FC" text-anchor="middle" font-weight="700" letter-spacing="0.5">9001</text>
+  <text x="80" y="100" font-family="Inter, Arial, sans-serif" font-size="8" fill="#F7F9FC" text-anchor="middle" font-weight="600" letter-spacing="1">2015</text>
+  <!-- Bottom band -->
+  <text x="80" y="128" font-family="Inter, Arial, sans-serif" font-size="6" fill="#F7F9FC" text-anchor="middle" font-weight="600" letter-spacing="2">QUALITY CERTIFIED</text>
+</svg>

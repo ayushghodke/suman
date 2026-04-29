@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Lightning Protection and Earthing">
+  <title>Lightning Protection &amp; Earthing</title>
+  <rect width="120" height="120" rx="16" fill="#F7F9FC"/>
+  <!-- Shield -->
+  <path d="M 60,20 L 92,32 L 92,60 Q 92,82 60,98 Q 28,82 28,60 L 28,32 Z"
+        fill="#1F4E8C" stroke="#0B2A4A" stroke-width="2.4" stroke-linejoin="round"/>
+  <!-- Lightning bolt inside shield -->
+  <path d="M 64,32 L 50,60 L 60,60 L 54,80 L 72,52 L 62,52 L 68,32 Z"
+        fill="#E89B1C" stroke="#0B2A4A" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Earth lines beneath shield -->
+  <g stroke="#0B2A4A" stroke-width="2.2" stroke-linecap="round">
+    <line x1="42" y1="106" x2="78" y2="106"/>
+    <line x1="50" y1="112" x2="70" y2="112"/>
+  </g>
+  <line x1="60" y1="98" x2="60" y2="106" stroke="#0B2A4A" stroke-width="2.2"/>
+</svg>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="Suman Enterprises four-step project execution process">
+  <title>How We Work — Survey, Design &amp; Liaison, Execution, Charging &amp; AMC</title>
+  <rect width="1600" height="400" fill="#F7F9FC"/>
+
+  <!-- Connecting dotted line across all steps -->
+  <line x1="200" y1="180" x2="1400" y2="180" stroke="#E89B1C" stroke-width="3" stroke-dasharray="6,8" stroke-linecap="round"/>
+
+  <!-- STEP 1: SURVEY -->
+  <g transform="translate(200, 180)">
+    <circle r="60" fill="#0B2A4A"/>
+    <circle r="60" fill="none" stroke="#E89B1C" stroke-width="3"/>
+    <!-- Magnifier icon -->
+    <circle cx="-6" cy="-6" r="16" fill="none" stroke="#F7F9FC" stroke-width="3"/>
+    <line x1="6" y1="6" x2="18" y2="18" stroke="#F7F9FC" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-12" y1="-6" x2="0" y2="-6" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-6" y1="-12" x2="-6" y2="0" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <!-- Step number -->
+    <circle cx="-50" cy="-50" r="18" fill="#E89B1C"/>
+    <text x="-50" y="-45" font-family="Inter, Arial, sans-serif" font-size="18" fill="#0B2A4A" text-anchor="middle" font-weight="800">01</text>
+  </g>
+  <text x="200" y="280" font-family="Inter, Arial, sans-serif" font-size="22" fill="#0B2A4A" text-anchor="middle" font-weight="700">Site Survey</text>
+  <text x="200" y="308" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">Load study, route alignment</text>
+  <text x="200" y="326" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">and feasibility assessment</text>
+
+  <!-- STEP 2: DESIGN & LIAISON -->
+  <g transform="translate(600, 180)">
+    <circle r="60" fill="#0B2A4A"/>
+    <circle r="60" fill="none" stroke="#E89B1C" stroke-width="3"/>
+    <!-- Document icon -->
+    <rect x="-18" y="-22" width="32" height="40" rx="2" fill="none" stroke="#F7F9FC" stroke-width="2.5"/>
+    <line x1="-12" y1="-12" x2="8" y2="-12" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-12" y1="-4" x2="8" y2="-4" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-12" y1="4" x2="8" y2="4" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-12" y1="12" x2="2" y2="12" stroke="#F7F9FC" stroke-width="2" stroke-linecap="round"/>
+    <!-- Stamp -->
+    <circle cx="14" cy="18" r="8" fill="#E89B1C"/>
+    <path d="M 10,18 L 13,21 L 18,15" stroke="#0B2A4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Step number -->
+    <circle cx="-50" cy="-50" r="18" fill="#E89B1C"/>
+    <text x="-50" y="-45" font-family="Inter, Arial, sans-serif" font-size="18" fill="#0B2A4A" text-anchor="middle" font-weight="800">02</text>
+  </g>
+  <text x="600" y="280" font-family="Inter, Arial, sans-serif" font-size="22" fill="#0B2A4A" text-anchor="middle" font-weight="700">Design &amp; Liaison</text>
+  <text x="600" y="308" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">SLD, drawings and MSEDCL/</text>
+  <text x="600" y="326" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">MSETCL approvals</text>
+
+  <!-- STEP 3: EXECUTION -->
+  <g transform="translate(1000, 180)">
+    <circle r="60" fill="#0B2A4A"/>
+    <circle r="60" fill="none" stroke="#E89B1C" stroke-width="3"/>
+    <!-- Hard hat icon -->
+    <ellipse cx="0" cy="2" rx="22" ry="6" fill="#F7F9FC"/>
+    <path d="M -18,2 Q 0,-22 18,2 Z" fill="#F7F9FC"/>
+    <line x1="-14" y1="-2" x2="14" y2="-2" stroke="#0B2A4A" stroke-width="1.5"/>
+    <!-- Wrench beneath -->
+    <path d="M -10,16 L 10,16 L 14,20 L 10,24 L -10,24 L -14,20 Z" fill="#E89B1C"/>
+    <!-- Step number -->
+    <circle cx="-50" cy="-50" r="18" fill="#E89B1C"/>
+    <text x="-50" y="-45" font-family="Inter, Arial, sans-serif" font-size="18" fill="#0B2A4A" text-anchor="middle" font-weight="800">03</text>
+  </g>
+  <text x="1000" y="280" font-family="Inter, Arial, sans-serif" font-size="22" fill="#0B2A4A" text-anchor="middle" font-weight="700">Execution</text>
+  <text x="1000" y="308" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">Civil, erection, cabling,</text>
+  <text x="1000" y="326" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">jointing and testing</text>
+
+  <!-- STEP 4: CHARGING & AMC -->
+  <g transform="translate(1400, 180)">
+    <circle r="60" fill="#0B2A4A"/>
+    <circle r="60" fill="none" stroke="#E89B1C" stroke-width="3"/>
+    <!-- Lightning bolt -->
+    <path d="M 4,-22 L -10,4 L 0,4 L -6,22 L 12,-2 L 2,-2 L 8,-22 Z"
+          fill="#E89B1C" stroke="#F7F9FC" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Step number -->
+    <circle cx="-50" cy="-50" r="18" fill="#E89B1C"/>
+    <text x="-50" y="-45" font-family="Inter, Arial, sans-serif" font-size="18" fill="#0B2A4A" text-anchor="middle" font-weight="800">04</text>
+  </g>
+  <text x="1400" y="280" font-family="Inter, Arial, sans-serif" font-size="22" fill="#0B2A4A" text-anchor="middle" font-weight="700">Charging &amp; AMC</text>
+  <text x="1400" y="308" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">Inspectorate clearance,</text>
+  <text x="1400" y="326" font-family="Inter, Arial, sans-serif" font-size="14" fill="#5A6A7A" text-anchor="middle" font-weight="500">handover and maintenance</text>
+
+  <!-- Title at top -->
+  <text x="800" y="60" font-family="Inter, Arial, sans-serif" font-size="32" fill="#0B2A4A" text-anchor="middle" font-weight="800">How We Work</text>
+  <text x="800" y="92" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5A6A7A" text-anchor="middle" font-weight="500">A four-step process from first call to live commissioning</text>
+  <line x1="720" y1="108" x2="880" y2="108" stroke="#E89B1C" stroke-width="3"/>
+</svg>

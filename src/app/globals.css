@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Suman Enterprises — Design Tokens (Tailwind v4 @theme)
+   Mirrors the palette, typography, radii and shadows from the
+   build brief §4. Edit hex values here to retune the brand.
+   --------------------------------------------------------------- */
+@theme {
+  --color-navy: #0B2A4A;
+  --color-blue: #1F4E8C;
+  --color-steel: #5A6A7A;
+  --color-cloud: #F7F9FC;
+  --color-amber: #E89B1C;
+  --color-green: #2E7D4F;
+
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+
+  --shadow-card: 0 2px 8px rgba(11, 42, 74, 0.06);
+  --shadow-card-hover: 0 8px 16px rgba(11, 42, 74, 0.12);
+
+  --container-prose: 65ch;
+}
+
+/* Base body & focus */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cloud);
+  color: var(--color-navy);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+/* TODO copy marker — visible amber dashed outline on placeholder strings.
+   Apply via the `data-todo` attribute on any element whose text is unconfirmed.
+   Example:  <h1 data-todo>{copy.heroHeadline}</h1>
+   The outline is dev-time only; remove the attribute when the copy is final. */
+[data-todo] {
+  outline: 1px dashed var(--color-amber);
+  outline-offset: 4px;
+  position: relative;
+}
+
+[data-todo]::before {
+  content: "TODO";
+  position: absolute;
+  top: -0.85rem;
+  left: 0;
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--color-amber);
+  background: var(--color-cloud);
+  padding: 0 0.25rem;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Skip-to-content link — visible only on focus */
+.skip-link {
+  position: absolute;
+  left: 0.5rem;
+  top: -3rem;
+  background: var(--color-navy);
+  color: var(--color-cloud);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  z-index: 100;
+  transition: top 0.15s;
+}
+.skip-link:focus {
+  top: 0.5rem;
+}
