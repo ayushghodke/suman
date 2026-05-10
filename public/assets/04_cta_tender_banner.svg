@@ -94,19 +94,4 @@
 
   <!-- Left dark overlay for legibility -->
   <rect width="1100" height="500" fill="url(#overlay)"/>
-
-  <!-- Eyebrow text -->
-  <text x="120" y="160" font-family="Inter, Arial, sans-serif" font-size="14" fill="#E89B1C" font-weight="700" letter-spacing="4">GOVERNMENT TENDERS</text>
-  <!-- Headline -->
-  <text x="120" y="220" font-family="Inter, Arial, sans-serif" font-size="48" fill="#F7F9FC" font-weight="800" letter-spacing="-1">Responding to MSEDCL, MSETCL,</text>
-  <text x="120" y="270" font-family="Inter, Arial, sans-serif" font-size="48" fill="#F7F9FC" font-weight="800" letter-spacing="-1">PWD, MIDC and MJP tenders.</text>
-  <!-- Sub copy -->
-  <text x="120" y="320" font-family="Inter, Arial, sans-serif" font-size="18" fill="#F7F9FC" opacity="0.85" font-weight="400">Share your tender reference. Our liaison desk reverts with prequalification</text>
-  <text x="120" y="346" font-family="Inter, Arial, sans-serif" font-size="18" fill="#F7F9FC" opacity="0.85" font-weight="400">documents within one working day.</text>
-
-  <!-- CTA button -->
-  <g transform="translate(120, 380)">
-    <rect width="280" height="56" rx="4" fill="#E89B1C"/>
-    <text x="140" y="35" font-family="Inter, Arial, sans-serif" font-size="16" fill="#0B2A4A" text-anchor="middle" font-weight="700" letter-spacing="1">SUBMIT TENDER ENQUIRY →</text>
-  </g>
 </svg>

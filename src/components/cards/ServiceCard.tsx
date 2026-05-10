@@ -9,28 +9,39 @@ export function ServiceCard({ service }: { service: Service }) {
   return (
     <Link
       href={`/services/${service.slug}`}
-      className="group flex flex-col bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 md:p-8 border border-steel/10"
+      className="group relative card-lift flex flex-col bg-white rounded-xl p-6 md:p-7 border border-line shadow-card overflow-hidden"
     >
-      <div className="w-16 h-16 mb-5">
+      {/* Top accent strip */}
+      <span
+        className="absolute top-0 inset-x-0 h-0.5 bg-amber scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300 ease-out"
+        aria-hidden
+      />
+
+      <div className="grid place-items-center w-14 h-14 mb-5 rounded-lg bg-cloud transition group-hover:bg-amber/10">
         <Image
           src={`/assets/${service.iconFile}`}
           alt=""
           role="presentation"
           width={120}
           height={120}
-          className="w-full h-full"
+          className="w-10 h-10"
         />
       </div>
-      <h3 className="text-xl font-semibold text-navy">{service.title}</h3>
+      <h3 className="text-lg md:text-xl font-bold text-navy leading-snug">
+        {service.title}
+      </h3>
       <p
         className="mt-2 text-sm text-steel leading-relaxed flex-1"
         data-todo={summaryIsTodo ? "" : undefined}
       >
         {service.summary}
       </p>
-      <span className="mt-5 inline-flex items-center gap-1.5 text-blue font-semibold text-sm">
+      <span className="mt-5 inline-flex items-center gap-1.5 text-blue font-semibold text-sm group-hover:text-amber transition">
         Learn more
-        <ArrowRight className="w-4 h-4 transition group-hover:translate-x-1" aria-hidden />
+        <ArrowRight
+          className="w-4 h-4 transition group-hover:translate-x-1"
+          aria-hidden
+        />
       </span>
     </Link>
   );

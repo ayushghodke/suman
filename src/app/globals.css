@@ -2,31 +2,53 @@
 
 /* ---------------------------------------------------------------
    Suman Enterprises — Design Tokens (Tailwind v4 @theme)
-   Mirrors the palette, typography, radii and shadows from the
-   build brief §4. Edit hex values here to retune the brand.
+   Premium-corporate palette. Edit hex values here to retune brand.
    --------------------------------------------------------------- */
 @theme {
+  /* Brand palette */
   --color-navy: #0B2A4A;
+  --color-navy-deep: #061629;
+  --color-navy-soft: #0F345A;
   --color-blue: #1F4E8C;
+  --color-blue-light: #2B6BB5;
   --color-steel: #5A6A7A;
+  --color-steel-soft: #8A95A3;
   --color-cloud: #F7F9FC;
+  --color-cloud-warm: #FBFBF8;
   --color-amber: #E89B1C;
+  --color-amber-light: #F5B547;
+  --color-amber-deep: #B97A12;
   --color-green: #2E7D4F;
+  --color-line: #E1E6EE;
 
+  /* Typography */
   --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
 
+  /* Radii */
+  --radius-sm: 0.25rem;
   --radius-md: 0.375rem;
   --radius-lg: 0.5rem;
+  --radius-xl: 0.875rem;
 
-  --shadow-card: 0 2px 8px rgba(11, 42, 74, 0.06);
-  --shadow-card-hover: 0 8px 16px rgba(11, 42, 74, 0.12);
+  /* Shadows */
+  --shadow-card: 0 1px 2px rgba(11, 42, 74, 0.04), 0 4px 12px rgba(11, 42, 74, 0.05);
+  --shadow-card-hover: 0 6px 14px rgba(11, 42, 74, 0.08), 0 12px 28px rgba(11, 42, 74, 0.12);
+  --shadow-amber: 0 6px 14px rgba(232, 155, 28, 0.15), 0 12px 32px rgba(232, 155, 28, 0.2);
+  --shadow-deep: 0 20px 60px rgba(6, 22, 41, 0.35);
 
+  /* Container width for prose paragraphs */
   --container-prose: 65ch;
+
+  /* Motion timing */
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-/* Base body & focus */
+/* ---------------------------------------------------------------
+   Base body & focus
+   --------------------------------------------------------------- */
 html {
   scroll-behavior: smooth;
 }
@@ -37,6 +59,12 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-amber);
+  color: var(--color-navy);
 }
 
 :focus-visible {
@@ -44,10 +72,11 @@ body {
   outline-offset: 2px;
 }
 
-/* TODO copy marker — visible amber dashed outline on placeholder strings.
-   Apply via the `data-todo` attribute on any element whose text is unconfirmed.
-   Example:  <h1 data-todo>{copy.heroHeadline}</h1>
-   The outline is dev-time only; remove the attribute when the copy is final. */
+/* ---------------------------------------------------------------
+   TODO marker — visible amber dashed outline on placeholder strings.
+   Apply via the data-todo attribute on any element whose text is
+   unconfirmed. Dev-time only; remove the attribute when copy is final.
+   --------------------------------------------------------------- */
 [data-todo] {
   outline: 1px dashed var(--color-amber);
   outline-offset: 4px;
@@ -67,9 +96,12 @@ body {
   padding: 0 0.25rem;
   text-transform: uppercase;
   pointer-events: none;
+  z-index: 1;
 }
 
-/* Skip-to-content link — visible only on focus */
+/* ---------------------------------------------------------------
+   Skip-to-content link — visible only on focus
+   --------------------------------------------------------------- */
 .skip-link {
   position: absolute;
   left: 0.5rem;
@@ -79,8 +111,275 @@ body {
   padding: 0.5rem 1rem;
   border-radius: var(--radius-md);
   z-index: 100;
-  transition: top 0.15s;
+  transition: top 0.15s var(--ease-out-soft);
 }
 .skip-link:focus {
   top: 0.5rem;
+}
+
+/* ---------------------------------------------------------------
+   Reusable utility classes — used across the redesigned components
+   --------------------------------------------------------------- */
+
+/* Eyebrow — small uppercase amber label that sits above headings */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+.eyebrow-plain::before {
+  display: none;
+}
+
+/* Section shells — consistent max-width and padding */
+.section-shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+@media (min-width: 640px) {
+  .section-shell { padding-inline: 1.5rem; }
+}
+@media (min-width: 1024px) {
+  .section-shell { padding-inline: 2rem; }
+}
+.section-shell-lg {
+  max-width: 90rem;
+}
+.section-shell-narrow {
+  max-width: 56rem;
+}
+
+/* Buttons — single source of truth */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  transition: transform 0.15s var(--ease-out-soft),
+              background-color 0.15s var(--ease-out-soft),
+              color 0.15s var(--ease-out-soft),
+              box-shadow 0.2s var(--ease-out-soft);
+  white-space: nowrap;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--color-amber);
+  color: var(--color-navy);
+}
+.btn-primary:hover {
+  background: var(--color-amber-light);
+  box-shadow: var(--shadow-amber);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-navy);
+  border: 2px solid var(--color-navy);
+}
+.btn-secondary:hover {
+  background: var(--color-navy);
+  color: var(--color-cloud);
+}
+
+.btn-secondary-light {
+  background: transparent;
+  color: var(--color-cloud);
+  border: 2px solid var(--color-cloud);
+}
+.btn-secondary-light:hover {
+  background: var(--color-cloud);
+  color: var(--color-navy);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-blue);
+  padding-inline: 0;
+}
+.btn-ghost:hover {
+  color: var(--color-amber);
+}
+.btn-ghost svg {
+  transition: transform 0.2s var(--ease-out-soft);
+}
+.btn-ghost:hover svg {
+  transform: translateX(3px);
+}
+
+/* Card lift — subtle hover elevation for cards */
+.card-lift {
+  transition: transform 0.25s var(--ease-out-soft),
+              box-shadow 0.25s var(--ease-out-soft),
+              border-color 0.25s var(--ease-out-soft);
+}
+.card-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Gradient backgrounds */
+.gradient-navy {
+  background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
+}
+.gradient-navy-soft {
+  background: linear-gradient(180deg, var(--color-navy-soft) 0%, var(--color-navy) 100%);
+}
+.gradient-cloud {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--color-cloud) 100%);
+}
+.gradient-cloud-amber {
+  background:
+    radial-gradient(80% 60% at 90% 0%, rgba(245, 181, 71, 0.12) 0%, transparent 60%),
+    linear-gradient(180deg, #FFFFFF 0%, var(--color-cloud) 100%);
+}
+.gradient-navy-amber {
+  background:
+    radial-gradient(60% 60% at 100% 0%, rgba(245, 181, 71, 0.25) 0%, transparent 60%),
+    linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
+}
+
+/* Subtle dotted accent */
+.bg-pattern-dots {
+  background-image: radial-gradient(circle at 1px 1px, rgba(232, 155, 28, 0.18) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Decorative top hairline divider — used at start of dark sections */
+.hairline-amber-top {
+  position: relative;
+}
+.hairline-amber-top::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-amber) 35%, var(--color-amber) 65%, transparent 100%);
+  opacity: 0.55;
+}
+
+/* ---------------------------------------------------------------
+   Motion — scroll-reveal (CSS-only, IntersectionObserver-free)
+   Sections animate in once via `animation-timeline: view()` where
+   supported, otherwise they show normally. No layout shift either way.
+   --------------------------------------------------------------- */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(46, 125, 79, 0.55); }
+  70%  { box-shadow: 0 0 0 14px rgba(46, 125, 79, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 125, 79, 0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s var(--ease-out-soft) both;
+}
+.animate-fade-in {
+  animation: fade-in 0.5s var(--ease-out-soft) both;
+}
+.animate-pulse-ring {
+  animation: pulse-ring 2.4s var(--ease-out-soft) infinite;
+}
+
+/* Stagger helpers */
+.delay-75  { animation-delay: 75ms; }
+.delay-150 { animation-delay: 150ms; }
+.delay-225 { animation-delay: 225ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Respect user's motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .card-lift:hover { transform: none; }
+  .btn:hover { transform: none; }
+}
+
+/* ---------------------------------------------------------------
+   Decorative SVG-style underline for active nav items
+   --------------------------------------------------------------- */
+.nav-link {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-amber);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s var(--ease-out-soft);
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  transform: scaleX(1);
+}
+
+/* ---------------------------------------------------------------
+   Prose typography — consistent paragraph rhythm
+   --------------------------------------------------------------- */
+.prose-body {
+  color: var(--color-steel);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+.prose-body p + p { margin-top: 1rem; }
+.prose-body strong { color: var(--color-navy); font-weight: 600; }
+.prose-body a {
+  color: var(--color-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s var(--ease-out-soft);
+}
+.prose-body a:hover { color: var(--color-amber); }
+
+/* ---------------------------------------------------------------
+   Image-card overlay — used by ProjectCard & similar
+   --------------------------------------------------------------- */
+.image-overlay-bottom {
+  background: linear-gradient(180deg,
+    rgba(11, 42, 74, 0) 0%,
+    rgba(11, 42, 74, 0) 45%,
+    rgba(11, 42, 74, 0.85) 100%);
+}
+.image-overlay-left {
+  background: linear-gradient(90deg,
+    rgba(11, 42, 74, 0.85) 0%,
+    rgba(11, 42, 74, 0.55) 45%,
+    rgba(11, 42, 74, 0) 80%);
 }
